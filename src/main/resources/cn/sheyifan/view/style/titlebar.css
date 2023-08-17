@@ -1,0 +1,41 @@
+#fxpdfs-app-icon {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+#fxpdfs-app-close-icon-box:hover #fxpdfs-app-close-icon {
+    -fx-text-fill: white;
+}
+
+#fxpdfs-app-minimize-icon-box:hover #fxpdfs-app-minimize-icon {
+    -fx-text-fill: white;
+}
+
+.titlebar-items-box {
+    -fx-alignment: center;
+}
+
+#fxpdfs-app-icon-box .titlebar-items-box {
+    -fx-padding: 0 7px 0 0;
+}
+
+#fxpdfs-icon-desc {
+    -fx-font-family: Verdana;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: 800;
+}
+
+#fxpdfs-app-icon-box {
+    -fx-background-color: #2481e3;
+    -fx-background-radius: 0 0 8px 8px;
+}
+
+#titlebar-settings-item-box:hover {
+    -fx-background-color: #2481e3;
+    -fx-cursor: hand;
+}
+
+#titlebar-settings-item-box:hover .label {
+    -fx-text-fill: white;
+}

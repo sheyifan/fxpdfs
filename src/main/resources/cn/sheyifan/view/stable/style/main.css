@@ -1,0 +1,13 @@
+/* styles shared by all components of application */
+/* 2020-12-12 23:38 sheyifan Issue: import local font-awesome icons */
+@font-face {
+    -fx-font-family: "syf-font";
+    src: local("syf-font"), url('../icon_font/syf-font.ttf') format("truetype");
+}
+
+/* styles shared by all components of application */
+/* 2020-12-12 23:38 sheyifan Issue: import local font-awesome icons */
+@font-face {
+    -fx-font-family: "Font Awesome 5 Free Solid";
+    src: local("Font Awesome 5 Free Solid"), url('../../font_icon/fonts/fa-solid-900.ttf') format("truetype");
+}

@@ -1,0 +1,9 @@
+.jfx-progress-bar > .bar,
+.jfx-progress-bar:indeterminate > .bar{
+    -fx-background-color: #2481e3;
+    -fx-padding: 1.5;
+}
+
+.jfx-progress-bar > .track{
+    -fx-background-color: #cbcfd8;
+}

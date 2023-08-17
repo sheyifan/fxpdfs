@@ -1,0 +1,34 @@
+.jfx-button:hover {
+    -fx-cursor: hand
+}
+
+.cancel-button {
+    -fx-background-color: #c75450;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-family: Verdana;
+}
+
+.continue-button {
+    -fx-background-color: #2481e3;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-family: Verdana;
+}
+
+#start-retrieve, #start {
+    -fx-background-color: #2481e3;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-family: Verdana;
+    -fx-font-size: 14px;
+}
+#start-retrieve:hover, #start:hover {
+    -fx-cursor: hand;
+}
+
+#cancel-progress-button {
+
+}

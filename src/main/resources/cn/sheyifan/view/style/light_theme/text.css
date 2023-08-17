@@ -1,0 +1,158 @@
+.icon {
+    -fx-font-family: "Font Awesome 5 Free Solid";
+    -fx-font-smoothing-type: lcd;
+}
+
+.prompt {
+    -fx-font-family: Verdana;
+    -fx-font-size: 12px;
+    -fx-text-fill: #cbcfd8;
+}
+
+.link {
+    -fx-font-family: Verdana;
+    -fx-font-size: 13px;
+    -fx-text-fill: #2481e3;
+}
+
+.sign {
+    -fx-font-family: Verdana;
+    -fx-font-size: 13px;
+    -fx-text-fill: #858585;
+}
+
+.alert {
+    -fx-font-family: Verdana;
+    -fx-font-size: 12;
+    -fx-text-fill: #c75450;
+    -fx-font-weight: 800;
+}
+
+.info {
+    -fx-font-family: Verdana;
+    -fx-font-size: 12;
+    -fx-text-fill: #2481e3;
+    -fx-font-weight: 800;
+}
+
+#check-history-link {
+    -fx-padding: 0 0 0 10;
+    -fx-font-weight: 800;
+}
+
+#find-web-resource-link {
+    -fx-font-weight: 800;
+}
+
+.link:hover {
+    -fx-cursor: hand;
+}
+
+#check-history-prompt {
+
+}
+
+#copyright {
+    -fx-font-family: Verdana;;
+}
+
+#pdf-dir-prompt {
+
+}
+
+#pdf-dir-sign {
+
+}
+
+#filetypes-sign {
+
+}
+
+#feedback-prompt {
+
+}
+
+#feedback-link {
+    -fx-font-weight: 800;
+}
+
+#edit-condition-sign {
+    -fx-background-color: white;
+    -fx-padding: 0 10 0 10;
+    -fx-font-weight: 800;
+}
+
+#title {
+    -fx-text-fill: black;
+    -fx-font-weight: 800;
+    -fx-font-family: Verdana;
+    -fx-font-size: 15;
+}
+
+#app-name {
+    -fx-text-fill: black;
+    -fx-font-family: Verdana;
+    -fx-font-size: 17;
+    -fx-font-weight: 800;
+}
+
+#pdf-icon-sign {
+    -fx-font-size: 13px;
+}
+
+#files-count {
+    -fx-font-family: Verdana;
+    -fx-font-size: 13px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #97a0b2;
+}
+
+#alert-sign {
+}
+
+.alert-info {
+    -fx-spacing: 10;
+}
+
+#progress-value {
+    -fx-font-weight: 800;
+    -fx-text-fill: #2481e3;
+}
+
+#progress-desc {
+    -fx-font-size: 13px;
+}
+
+#error-desc, #info-desc {
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+    -fx-text-fill: white;
+}
+
+#settings-app-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #2481e3;
+}
+
+#settings-app-version,
+#settings-supported-file-types-label,
+#settings-license-label,
+#settings-theme-label,
+#settings-username-label {
+    -fx-text-fill: #333333;
+    -fx-font-weight: 800;
+}
+
+#settings-app-release, #settings-license-detail {
+
+}
+
+#keywords-sign {
+    -fx-font-weight: 800;
+}
+
+#found-items-table-placeholder {
+    -fx-font-family: Verdana;
+    -fx-font-weight: 800;
+}

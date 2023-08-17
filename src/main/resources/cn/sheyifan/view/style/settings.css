@@ -1,0 +1,120 @@
+#settings-app-icon-box {
+    -fx-alignment: center;
+}
+
+#settings-app-icon {
+    -fx-font-size: 25px;
+    -fx-text-fill: #2481e3;
+}
+
+#settings-top-bar {
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: rgba(0, 0, 0, 0.05);
+}
+
+#settings-uneditable-info-box {
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: rgba(0, 0, 0, 0.05);
+}
+
+#settings-supported-file-types-icons-box, #settings-license-box, #settings-username-box {
+    -fx-padding: 0 0 0 30px;
+    -fx-alignment: center-left;
+}
+
+.settings-filetype-icon {
+    -fx-font-size: 14px;
+    -fx-padding: 0 10px 0 0;
+}
+
+#settings-filetype-icon-pdf {
+    -fx-text-fill: #2481e3;
+}
+
+#settings-filetype-icon-word {
+    -fx-text-fill: #2481e3;
+}
+
+#settings-filetype-icon-excel {
+    -fx-text-fill: #2481e3;
+}
+
+#settings-filetype-icon-ppt {
+    -fx-text-fill: #2481e3;
+}
+
+#settings-filetype-icon-txt {
+    -fx-text-fill: #2481e3;
+}
+
+.settings-uneditable-sign-box {
+    -fx-alignment: center-left;
+    -fx-padding: 0 0 0 10px;
+}
+
+.settings-side-box {
+    -fx-alignment: center-right;
+    -fx-padding: 0 21px 0 0;
+}
+
+.settings-side-box .jfx-button {
+    -fx-background-color: #2481e3;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+}
+
+.settings-theme-radio-button {
+    -fx-padding: 0 20px 0 0;
+    -fx-font-size: 12px;
+    -fx-text-fill: #979ba4;
+    -fx-font-family: Verdana;
+    -fx-font-weight: 800;
+}
+
+#settings-side-bar {
+    -fx-background-color: #2481e3;
+    -fx-background-radius: 19px 0 0 19px;
+}
+
+#settings-side-bar-icon {
+    -fx-text-fill: white;
+}
+
+#save-settings-button {
+    -fx-font-family: Verdana;
+    -fx-font-size: 12px;
+    -fx-background-color: #2481e3;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+}
+
+#cancel-save-settings-button {
+    -fx-font-family: Verdana;
+    -fx-font-size: 12px;
+    -fx-font-weight: 800;
+}
+
+#settings-supported-file-types-label {
+
+}
+
+#edit-usr-button {
+    -fx-background-color: #0f9d58;
+}
+
+#settings-app-name-box {
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-background-color: #2481e3;
+}
+
+#settings-app-name-box .label {
+    -fx-text-fill: white;
+}
+
+#settings-app-icon-box-slash {
+    -fx-background-color: #2481e3;
+}
+
+#settings-app-icon-box-slash .label {
+    -fx-text-fill: white;
+}

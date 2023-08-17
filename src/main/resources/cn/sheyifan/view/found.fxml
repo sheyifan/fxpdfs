@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="found-container-outline" stylesheets="@style/light_theme/table.css, @style/main.css, @style/light_theme/container.css, @style/light_theme/text.css, @style/light_theme/icons.css, @style/light_theme/input.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="found-container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="350.0">
+         <children>
+            <JFXButton id="start" layoutX="75.0" layoutY="499.0" prefHeight="30.0" prefWidth="200.0" stylesheets="@style/buttons.css" text="Start" />
+            <JFXTreeTableView id="found-items-table" layoutX="52.0" layoutY="196.0" prefHeight="270.0" prefWidth="247.0">
+               <placeholder>
+                  <Label id="found-items-table-placeholder" text="None" />
+               </placeholder>
+            </JFXTreeTableView>
+            <Label id="pdf-icon-sign" layoutX="158.0" layoutY="58.0" styleClass="sign" text="/" />
+            <Label id="files-count" layoutX="259.0" layoutY="58.0" text="0" />
+            <Label id="found-app-icon" layoutX="175.0" layoutY="56.0" styleClass="icon" text="" />
+            <Pane layoutX="50.0" layoutY="477.0" prefHeight="2.0" prefWidth="250.0" style="-fx-background-color: #97a0b2;" />
+            <Pane id="titlebar-root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="350.0" stylesheets="@style/titlebar.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <VBox id="fxpdfs-app-close-icon-box" layoutX="308.0" prefHeight="35.0" prefWidth="35.0" styleClass="titlebar-items-box">
+                     <children>
+                        <Label id="fxpdfs-app-close-icon" styleClass="icon" text="" />
+                     </children>
+                  </VBox>
+                  <VBox id="fxpdfs-app-minimize-icon-box" layoutX="273.0" prefHeight="35.0" prefWidth="35.0" styleClass="titlebar-items-box">
+                     <children>
+                        <Label id="fxpdfs-app-minimize-icon" styleClass="icon" text="" />
+                     </children>
+                  </VBox>
+                  <HBox id="fxpdfs-app-icon-box" alignment="CENTER" layoutX="102.0" prefHeight="35.0" prefWidth="146.0">
+                     <children>
+                        <VBox prefHeight="35.0" prefWidth="25.0" styleClass="titlebar-items-box">
+                           <children>
+                              <Label id="fxpdfs-app-icon" styleClass="icon" text="" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="35.0" prefWidth="58.0" styleClass="titlebar-items-box">
+                           <children>
+                              <Label id="fxpdfs-icon-desc" text="FxPDFs" />
+                           </children>
+                        </VBox>
+                        <Label id="pdf-icon" styleClass="icon" stylesheets="@style/light_theme/icons.css" text="" />
+                     </children>
+                  </HBox>
+                  <VBox id="titlebar-settings-item-box" layoutX="9.0" prefHeight="35.0" prefWidth="35.0" styleClass="titlebar-items-box">
+                     <children>
+                        <Label id="main-settings-icon" styleClass="icon" text="" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Label id="keywords-sign" layoutX="53.0" layoutY="58.0" styleClass="sign" text="Keywords" />
+            <HBox id="keywords-alert-box" layoutX="69.0" layoutY="183.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="16.0" prefWidth="230.0" styleClass="alert-info">
+               <children>
+                  <Label id="filetypes-alert-icon" styleClass="icon" text="" />
+                  <HBox prefHeight="16.0" prefWidth="155.0" style="-fx-alignment: center center">
+                     <children>
+                        <Label id="filetypes-alert-sign" prefHeight="15.0" prefWidth="152.0" styleClass="alert" text="keywords are missing" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</VBox>

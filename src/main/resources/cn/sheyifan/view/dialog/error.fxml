@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="progress-outer-root" stylesheets="@../style/main.css, @../style/light_theme/container.css, @../style/progress.css, @../style/buttons.css, @../style/light_theme/text.css, @../style/light_theme/icons.css, @../style/light_theme/input.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane id="progress-root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="159.0" prefWidth="393.0">
+      <children>
+         <JFXButton id="cancel-progress-button" layoutX="201.0" layoutY="126.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="80.0" styleClass="cancel-button" text="cancel" />
+         <JFXButton id="continue-progress-button" layoutX="300.0" layoutY="126.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="80.0" styleClass="continue-button" text="continue" />
+         <Label id="error-desc" layoutX="179.0" layoutY="15.0" styleClass="alert" text="Error" />
+         <Label id="copyright" layoutX="9.0" layoutY="130.0" styleClass="prompt" text="Copyright © sheyifan" />
+         <Label id="alert-app-icon" layoutX="361.0" layoutY="12.0" styleClass="icon" text="" />
+         <Label id="alert-dialog-icon" layoutX="27.0" layoutY="54.0" styleClass="icon" text="" />
+         <TextArea id="alert-info" layoutX="110.0" layoutY="36.0" prefHeight="86.0" prefWidth="265.0" />
+      </children>
+   </Pane>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

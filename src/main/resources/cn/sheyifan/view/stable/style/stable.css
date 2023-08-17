@@ -1,0 +1,150 @@
+.syf-font-icon {
+    -fx-font-family: "Font Awesome 5 Free Solid";
+}
+
+.icon-box {
+    -fx-alignment: center;
+}
+
+#match-count-icon {
+    -fx-padding: 0 0 0 10px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #2481E3;
+}
+
+#id-icon, #file-path-icon, #file-type-icon {
+    -fx-padding: 0 0 0 10px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #979ba4;
+}
+
+#stable {
+    -fx-font-family: Verdana;
+    -fx-background-color: white;
+}
+
+#stable .jfx-check-box .box {
+    -fx-pref-width: 15px;
+    -fx-pref-height: 15px;
+}
+
+#stable-head {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0.0, 0.0);
+    -fx-background-color: white;
+    -fx-padding: 0 0 0 10px;
+}
+
+#stable-body {
+    -fx-padding: 10px 10px 5px 10px;
+    -fx-font-family: Verdana;;
+}
+
+.stable-body-row {
+    -fx-background-color: white;
+}
+
+.check-history-item {
+    -fx-pref-width: 60px;
+    -fx-alignment: center;
+}
+
+.check-history-item .jfx-check-box {
+    -jfx-unchecked-color: #5A5A5A;
+    -jfx-checked-color: #2481E3;
+}
+
+#stable-head .field {
+    -fx-alignment: center center;
+    -fx-font-weight: 800;
+}
+
+.stable-body-row .field {
+    -fx-alignment: center center;
+    -fx-font-weight: 800;
+}
+
+.id-value, .match-count-value, .file-type-value, .filepath-value {
+    -fx-text-fill: #5A5A5A;
+    -fx-font-weight: 600;
+}
+
+.filepath-box {
+    -fx-alignment: center-left;
+    -fx-padding: 0 10px 0 10px;
+}
+
+.stable-body-row:hover {
+    -fx-background-color: #5ca1e3 !important;
+    -fx-cursor: hand;
+}
+
+.stable-body-row:focused {
+    -fx-background-color: #2481E3 !important;
+}
+
+.stable-body-row:hover .label {
+    -fx-text-fill: white !important;
+}
+
+.stable-body-row:focused .label {
+    -fx-text-fill: white !important;
+}
+
+.stable-body-row:hover .jfx-check-box {
+    -jfx-unchecked-color: white;
+    -jfx-checked-color: #2481E3;
+}
+
+.stable-body-row:focused .jfx-check-box {
+    -jfx-unchecked-color: white;
+    -jfx-checked-color: #2481E3;
+}
+
+#page-indexes-box {
+    -fx-alignment: center;
+    -fx-padding: 5px;
+    -fx-spacing: 5px;
+}
+
+.page-index-box {
+    -fx-alignment: center;
+}
+
+.page-index-box:hover {
+    -fx-background-color: #2481E3;
+    -fx-cursor: hand;
+}
+
+.page-index-box:hover .label {
+    -fx-text-fill: white;
+}
+
+.page-index-box .label {
+    -fx-font-family: Verdana;
+    -fx-text-fill: #5A5A5A;
+    -fx-font-weight: 800;
+}
+
+.change-page-arrow {
+    -fx-alignment: center;
+    -fx-background-color: #979ba4;
+}
+
+.change-page-arrow:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #2481E3;
+}
+
+.change-page-arrow .label {
+    -fx-font-family: Verdana;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+}
+
+.page-index-box:focused {
+    -fx-background-color: #2481E3;
+}
+
+.page-index-box:focused .label {
+    -fx-text-fill: white;
+}

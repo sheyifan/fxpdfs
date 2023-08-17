@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="stable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="700.0" stylesheets="@style/main.css, @style/stable.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox id="stable-head" prefHeight="60.0" prefWidth="200.0">
+         <children>
+            <VBox styleClass="check-history-item">
+               <children>
+                  <JFXCheckBox text="" />
+               </children>
+            </VBox>
+            <HBox prefHeight="60.0" prefWidth="77.0" styleClass="field">
+               <children>
+                  <Label text="ID" />
+                  <Label id="id-icon" styleClass="syf-font-icon" text="" />
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="139.0" styleClass="field">
+               <children>
+                  <Label text="Match count" />
+                  <Label id="match-count-icon" styleClass="syf-font-icon" text="" />
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="124.0" styleClass="field">
+               <children>
+                  <Label text="File type" />
+                  <Label id="file-type-icon" styleClass="syf-font-icon" text="" />
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="289.0" styleClass="field">
+               <children>
+                  <Label text="File path" />
+                  <Label id="file-path-icon" styleClass="syf-font-icon" text="" />
+               </children>
+            </HBox>
+         </children></HBox>
+      <VBox id="stable-body" prefHeight="318.0" prefWidth="700.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0.05);" styleClass="stable-body-row">
+               <children>
+                  <VBox styleClass="check-history-item">
+                     <children>
+                        <JFXCheckBox text="" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="60.0" prefWidth="77.0" styleClass="field">
+                     <children>
+                        <Label styleClass="id-value" text="1" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="139.0" styleClass="field">
+                     <children>
+                        <Label styleClass="match-count-value" text="3203" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="124.0" styleClass="field">
+                     <children>
+                        <Label styleClass="file-type-value" text="PDF" />
+                        <Label id="file-type-icon" styleClass="syf-font-icon" text="" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="279.0" styleClass="filepath-box">
+                     <children>
+                        <Label styleClass="filepath-value" text="C:\Users\15068\Documents\workdir\project\my_app\fx-pdfs\src\main\resources\stable\images" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" styleClass="stable-body-row">
+               <children>
+                  <VBox styleClass="check-history-item">
+                     <children>
+                        <JFXCheckBox text="" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="60.0" prefWidth="77.0" styleClass="field">
+                     <children>
+                        <Label styleClass="id-value" text="2" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="139.0" styleClass="field">
+                     <children>
+                        <Label styleClass="match-count-value" text="2001" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="124.0" styleClass="field">
+                     <children>
+                        <Label styleClass="file-type-value" text="Excel" />
+                        <Label id="file-type-icon" styleClass="syf-font-icon" text="" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="279.0" styleClass="filepath-box">
+                     <children>
+                        <Label styleClass="filepath-value" text="C:\Users\15068\Documents\workdir" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0.05);" styleClass="stable-body-row">
+               <children>
+                  <VBox styleClass="check-history-item">
+                     <children>
+                        <JFXCheckBox text="" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="60.0" prefWidth="77.0" styleClass="field">
+                     <children>
+                        <Label styleClass="id-value" text="3" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="139.0" styleClass="field">
+                     <children>
+                        <Label styleClass="match-count-value" text="2000" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="124.0" styleClass="field">
+                     <children>
+                        <Label styleClass="file-type-value" text="PPT" />
+                        <Label id="file-type-icon" styleClass="syf-font-icon" text="" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="279.0" styleClass="filepath-box">
+                     <children>
+                        <Label styleClass="filepath-value" text="C:\Users\15068" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" styleClass="stable-body-row">
+               <children>
+                  <VBox styleClass="check-history-item">
+                     <children>
+                        <JFXCheckBox text="" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="60.0" prefWidth="77.0" styleClass="field">
+                     <children>
+                        <Label styleClass="id-value" text="4" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="139.0" styleClass="field">
+                     <children>
+                        <Label styleClass="match-count-value" text="1945" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="124.0" styleClass="field">
+                     <children>
+                        <Label styleClass="file-type-value" text="Text" />
+                        <Label id="file-type-icon" styleClass="syf-font-icon" text="" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="279.0" styleClass="filepath-box">
+                     <children>
+                        <Label styleClass="filepath-value" text="C:\Users\15068\Documents\workdir\SW" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0.05); -fx-border-width: 0 0 2px 0; -fx-border-color: #e6e6e6;" styleClass="stable-body-row">
+               <children>
+                  <VBox styleClass="check-history-item">
+                     <children>
+                        <JFXCheckBox text="" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="60.0" prefWidth="77.0" styleClass="field">
+                     <children>
+                        <Label styleClass="id-value" text="5" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="139.0" styleClass="field">
+                     <children>
+                        <Label styleClass="match-count-value" text="1856" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="124.0" styleClass="field">
+                     <children>
+                        <Label styleClass="file-type-value" text="Word" />
+                        <Label id="file-type-icon" styleClass="syf-font-icon" text="" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="279.0" styleClass="filepath-box">
+                     <children>
+                        <Label styleClass="filepath-value" text="C:\Users\15068\Documents\PlatformIO" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox id="page-indexes-box" prefHeight="35.0" prefWidth="700.0">
+         <children>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="change-page-arrow">
+               <children>
+                  <Label text="&lt;" />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="page-index-box">
+               <children>
+                  <Label text="1" />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="page-index-box">
+               <children>
+                  <Label text="2" />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="page-index-box">
+               <children>
+                  <Label text="3" />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="page-index-box">
+               <children>
+                  <Label text="..." />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="page-index-box">
+               <children>
+                  <Label text="9" />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="page-index-box">
+               <children>
+                  <Label text="10" />
+               </children>
+            </VBox>
+            <VBox prefHeight="25.0" prefWidth="25.0" styleClass="change-page-arrow">
+               <children>
+                  <Label text="&gt;" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

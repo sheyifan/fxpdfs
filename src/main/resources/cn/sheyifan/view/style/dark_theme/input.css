@@ -1,0 +1,149 @@
+.jfx-chip-view {
+    -fx-pref-width: 310;
+    -fx-pref-height: 90;
+    -fx-border-width: 2px;
+    -fx-border-color: #858585;
+    -fx-font-family: Verdana;;
+    -fx-font-size: 12.0;
+}
+
+.jfx-chip-view:focused {
+    -fx-border-color: #2481e3;
+}
+
+.jfx-chip-view .chips-pane {
+    -fx-padding: 5 5 5 5;
+}
+
+.jfx-chip-view .jfx-chip > HBox {
+    -fx-font-family: Verdana, Arial, sans-serif;
+    -fx-font-size: 12.0;
+    -fx-font-weight: 800;
+    -fx-background-color: #E0E0E0;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 8px 5px 12px;
+    -fx-pref-height: 25px;
+    -fx-alignment: center-left;
+    -fx-spacing: 8;
+}
+
+.jfx-chip-view .text-area {
+    -fx-text-fill: #e6e6e6;
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.jfx-tree-table-view .column-header .label {
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.jfx-tree-table-view .tree-table-cell {
+    -fx-font-family: "Microsoft YaHei";
+}
+
+#keywords .jfx-chip > HBox {
+    -fx-font-family: "Microsoft YaHei";
+}
+
+#pdf-url-box {
+    /* text selection color */
+    -fx-accent: #2481e3;
+    -fx-font-family: Verdana;
+    -fx-font-size: 12.0;
+    -fx-padding: 0 20 0 90;
+
+    -fx-border-color: #858585;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #868686;
+}
+
+#pdf-url-box:focused {
+    -fx-border-color: #2481e3;
+}
+
+#username-text {
+    /* text selection color */
+    -fx-accent: #2481e3;
+    -fx-font-family: Verdana;;
+    -fx-font-size: 12.0;
+    -fx-padding: 0 0 3px 0;
+}
+
+#username-text {
+    -fx-border-color: #eff1f3;
+    -fx-border-width: 0 0 2px 0;
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+}
+
+#username-text:focused {
+    -fx-border-color: #0f9d58;
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+}
+
+/* clear default border and background style */
+#alert-info, #info-info {
+    -fx-background-insets: 0;
+    -fx-background-color: white;
+    -fx-font-family: Verdana;
+    -fx-font-size: 11px;
+    -fx-text-fill: #565f69;
+    -fx-font-weight: 800;
+    -fx-wrap-text: true;
+}
+
+#alert-info *.text, #info-info *.text {
+    /*-fx-text-alignment: center;*/
+}
+
+#alert-info .content, #info-info .content {
+    -fx-background-color: white;
+}
+
+#alert-info:focused .content, #info-info .content {
+    -fx-background-color: white;
+}
+
+/* text selection color */
+#alert-info:focused, #info-info:focused {
+    -fx-highlight-fill: #2481e3;
+}
+
+#alert-info .content, #info-info .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #2481e3;
+}
+
+.file-type-item {
+    -fx-alignment: center-left;
+    -fx-background-color: #858585;
+}
+
+.filetype-item-icon {
+    -fx-font-size: 14px;
+    -fx-text-fill: #e6e6e6;
+    -fx-padding: 0 10px 0 10px;
+}
+
+.file-type-item-checkbox {
+    -fx-font-family: Verdana;
+    -fx-text-fill: #e6e6e6;
+    -fx-font-weight: 800;
+}
+
+.file-type-item-checkbox .box,
+.file-type-item-checkbox:indeterminate .box,
+.file-type-item-checkbox:indeterminate:selected .box{
+    -fx-pref-width: 13px;
+    -fx-pref-height: 13px;
+}
+
+#file-types-checkboxes-box {
+    -fx-border-width: 2px;
+    -fx-border-color: #858585;
+}

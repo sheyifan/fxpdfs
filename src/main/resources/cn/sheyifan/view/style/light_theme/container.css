@@ -1,0 +1,41 @@
+#titlebar-root {
+    -fx-background-color: white;
+    -fx-background-radius: 5px 5px 0 0;
+}
+
+#main-container-outline, #settings-container-outline, #found-container-outline {
+    -fx-padding: 10px;
+    -fx-background-color: #00000000;
+}
+
+#progress-outer-root {
+    -fx-background-color: #00000000;
+}
+
+#settings-container-outline {
+    -fx-padding: 4px;
+    -fx-background-color: #00000000;
+}
+
+#progress-root-outline {
+    -fx-padding: 10px;
+    -fx-background-color: #00000000;
+}
+
+#main-container, #found-container, #settings-container {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#settings-container {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-pref-width: 345px;
+}
+
+#progress-root {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0)
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="progress-root-outline" stylesheets="@style/main.css, @style/light_theme/container.css, @style/progress.css, @style/buttons.css, @style/light_theme/text.css, @style/light_theme/icons.css, @style/titlebar.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane id="progress-root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="305.0">
+      <children>
+         <JFXProgressBar id="indexing-progress-bar" layoutX="10.0" layoutY="43.0" prefHeight="5.0" prefWidth="285.0" progress="0.0" />
+         <JFXButton id="cancel-progress-button" layoutX="218.0" layoutY="60.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="76.0" styleClass="cancel-button" text="cancel" />
+         <Label id="progress-value" layoutX="15.0" layoutY="14.0" styleClass="sign" text="? %" />
+         <Label id="progress-desc" alignment="CENTER" layoutX="67.0" layoutY="14.0" prefHeight="15.0" prefWidth="170.0" styleClass="sign" text="estimating progress..." />
+         <Label id="copyright" layoutX="10.0" layoutY="63.0" styleClass="prompt" text="Copyright © sheyifan" />
+         <Label id="progress-app-icon" layoutX="278.0" layoutY="14.0" styleClass="icon" text="" />
+         <VBox id="fxpdfs-app-minimize-icon-box" layoutX="237.0" layoutY="10.0" prefHeight="25.0" prefWidth="35.0" styleClass="titlebar-items-box">
+            <children>
+               <Label id="fxpdfs-app-minimize-icon" styleClass="icon" text="" />
+            </children>
+         </VBox>
+      </children>
+   </Pane>
+</VBox>

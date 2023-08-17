@@ -1,0 +1,28 @@
+/* styles shared by all components of application */
+/* 2020-12-12 23:38 sheyifan Issue: import local font-awesome icons */
+@font-face {
+    -fx-font-family: "Font Awesome 5 Free Solid";
+    src: local("Font Awesome 5 Free Solid"), url('../font_icon/fonts/fa-solid-900.ttf') format("truetype");
+}
+
+@font-face {
+    -fx-font-family: "Microsoft YaHei";
+    url('../font_icon/fonts/msyh.ttc')
+}
+
+@font-face {
+    -fx-font-family: "Microsoft YaHei";
+    url('../font_icon/fonts/msyhbd.ttc');
+    -fx-font-weight: 800;
+}
+
+@font-face {
+    -fx-font-family: "Verdana";
+    url('../font_icon/fonts/Verdana.ttf')
+}
+
+@font-face {
+    -fx-font-family: "Verdana";
+    url('../font_icon/fonts/Verdana.ttf');
+    -fx-font-weight: 800;
+}

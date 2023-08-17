@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane id="titlebar-root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="445.0" stylesheets="@style/main.css, @style/light_theme/container.css, @style/light_theme/text.css, @style/light_theme/input.css, @style/light_theme/icons.css, @style/titlebar.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="181.0" prefHeight="25.0" prefWidth="25.0" styleClass="titlebar-items-box">
+         <children>
+            <Label id="fxpdfs-app-icon" styleClass="icon" text="" />
+         </children>
+      </VBox>
+      <VBox layoutX="206.0" prefHeight="25.0" prefWidth="58.0" styleClass="titlebar-items-box">
+         <children>
+            <Label id="fxpdfs-icon-desc" text="FxPDFs" />
+         </children>
+      </VBox>
+      <VBox id="fxpdfs-app-close-icon-box" layoutX="410.0" prefHeight="25.0" prefWidth="35.0" styleClass="titlebar-items-box">
+         <children>
+            <Label id="fxpdfs-app-close-icon" styleClass="icon" text="&#xf410;" />
+         </children>
+      </VBox>
+      <VBox id="fxpdfs-app-minimize-icon-box" layoutX="375.0" prefHeight="25.0" prefWidth="35.0" styleClass="titlebar-items-box">
+         <children>
+            <Label id="fxpdfs-app-minimize-icon" styleClass="icon" text="&#xf2d1;" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

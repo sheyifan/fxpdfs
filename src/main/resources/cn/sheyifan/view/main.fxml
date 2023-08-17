@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="main-container-outline" stylesheets="@style/main.css, @style/light_theme/container.css, @style/light_theme/text.css, @style/light_theme/input.css, @style/light_theme/icons.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="main-container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="445.0">
+         <children>
+            <JFXButton id="start-retrieve" layoutX="70.0" layoutY="469.0" prefHeight="38.0" prefWidth="305.0" stylesheets="@style/buttons.css" text="Start retrieving" />
+            <TextField id="pdf-url-box" layoutX="70.0" layoutY="386.0" prefHeight="45.0" prefWidth="305.0" styleClass="retrieve-condition-input" stylesheets="@style/buttons.css" />
+            <Label id="dir-icon" layoutX="89.0" layoutY="401.0" styleClass="icon" text="" />
+            <HBox alignment="TOP_CENTER" layoutX="69.0" layoutY="515.0" prefHeight="30.0" prefWidth="318.0">
+               <children>
+                  <Label id="check-history-prompt" styleClass="sign" text="Need retrieve history?" />
+                  <Label id="check-history-link" prefHeight="15.0" prefWidth="67.0" styleClass="link" text="Check" />
+               </children>
+            </HBox>
+            <Label id="copyright" layoutX="21.0" layoutY="545.0" styleClass="prompt" text="© 2022 All right reserved" />
+            <Label id="pdf-dir-sign" layoutX="80.0" layoutY="362.0" styleClass="sign" text="PDF source" />
+            <Separator layoutX="145.0" layoutY="401.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="4.0" />
+            <Label id="find-web-resource-link" alignment="CENTER_RIGHT" layoutX="284.0" layoutY="362.0" prefHeight="15.0" prefWidth="85.0" styleClass="link" text="From Web" />
+            <Label id="web-icon" layoutX="116.0" layoutY="401.0" styleClass="icon" text="" />
+            <Label id="filetypes-sign" layoutX="78.0" layoutY="209.0" styleClass="sign" text="File types" />
+            <Label id="filetypes-icon" layoutX="346.0" layoutY="209.0" styleClass="icon" text="" />
+            <Separator layoutX="70.0" layoutY="182.0" opacity="0.45" prefHeight="0.0" prefWidth="305.0" />
+            <Label id="edit-condition-sign" alignment="CENTER" layoutX="156.0" layoutY="174.0" prefHeight="16.0" prefWidth="133.0" styleClass="sign" text="Edit Conditions" textAlignment="CENTER" />
+            <Label id="title" layoutX="69.0" layoutY="103.0" text="PDF searching" />
+            <Label id="title-sign" layoutX="70.0" layoutY="136.0" styleClass="sign" text="From local file system or web services" />
+            <Label id="app-icon" layoutX="15.0" layoutY="50.0" styleClass="icon" text="" />
+            <Label id="app-name" layoutX="51.0" layoutY="54.0" text="FxPDFs" />
+            <HBox alignment="TOP_RIGHT" layoutX="226.0" layoutY="545.0" prefHeight="30.0" prefWidth="207.0">
+               <children>
+                  <Label id="feedback-prompt" prefHeight="15.0" styleClass="sign" text="Any question -" />
+                  <Label id="feedback-link" prefHeight="15.0" styleClass="link" text="Feedback">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <Label layoutX="361.0" layoutY="56.0" styleClass="prompt" text="Copyright" />
+            <Label layoutX="361.0" layoutY="86.0" style="-fx-font-family: 'Microsoft YaHei';" styleClass="prompt" text="sheyifan" />
+            <HBox id="url-alert-box" layoutX="203.0" layoutY="439.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="16.0" prefWidth="161.0" styleClass="alert-info">
+               <children>
+                  <Label id="url-alert-icon" styleClass="icon" text="" />
+                  <HBox style="-fx-alignment: center center">
+                     <Label id="url-alert-sign" styleClass="alert" text="invalid URL" />
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox id="filetypes-alert-box" layoutX="133.0" layoutY="335.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="16.0" prefWidth="230.0" styleClass="alert-info">
+               <children>
+                  <Label id="filetypes-alert-icon" styleClass="icon" text="" />
+                  <HBox prefHeight="16.0" prefWidth="155.0" style="-fx-alignment: center center">
+                     <Label id="filetypes-alert-sign" prefHeight="15.0" prefWidth="152.0" styleClass="alert" text="file types are missing" />
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane id="titlebar-root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="445.0" stylesheets="@style/titlebar.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <VBox id="fxpdfs-app-close-icon-box" layoutX="400.0" prefHeight="35.0" prefWidth="35.0" styleClass="titlebar-items-box">
+                     <children>
+                        <Label id="fxpdfs-app-close-icon" styleClass="icon" text="" />
+                     </children>
+                  </VBox>
+                  <VBox id="fxpdfs-app-minimize-icon-box" layoutX="365.0" prefHeight="35.0" prefWidth="35.0" styleClass="titlebar-items-box">
+                     <children>
+                        <Label id="fxpdfs-app-minimize-icon" styleClass="icon" text="" />
+                     </children>
+                  </VBox>
+                  <HBox id="fxpdfs-app-icon-box" alignment="CENTER" layoutX="164.0" prefHeight="35.0" prefWidth="115.0">
+                     <children>
+                        <VBox prefHeight="35.0" prefWidth="25.0" styleClass="titlebar-items-box">
+                           <children>
+                              <Label id="fxpdfs-app-icon" styleClass="icon" text="" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="35.0" prefWidth="58.0" styleClass="titlebar-items-box">
+                           <children>
+                              <Label id="fxpdfs-icon-desc" text="FxPDFs" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox id="titlebar-settings-item-box" layoutX="13.0" prefHeight="35.0" prefWidth="35.0" styleClass="titlebar-items-box">
+                     <children>
+                        <Label id="main-settings-icon" styleClass="icon" text="" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane id="file-types-checkboxes-box" layoutX="70.0" layoutY="233.0" prefHeight="95.0" prefWidth="305.0">
+               <children>
+                  <HBox id="pdf-item" layoutX="11.0" layoutY="11.0" prefHeight="30.0" prefWidth="133.0" styleClass="file-type-item">
+                     <children>
+                        <Label styleClass="icon, filetype-item-icon" text="" />
+                        <JFXCheckBox checkedColor="#2481e3" selected="true" styleClass="file-type-item-checkbox" text="PDF" unCheckedColor="#e6e6e6" />
+                     </children>
+                  </HBox>
+                  <HBox id="word-item" layoutX="162.0" layoutY="11.0" prefHeight="30.0" prefWidth="133.0" styleClass="file-type-item">
+                     <children>
+                        <Label styleClass="icon, filetype-item-icon" text="" />
+                        <JFXCheckBox checkedColor="#2481e3" selected="true" styleClass="file-type-item-checkbox" text="Word" unCheckedColor="#e6e6e6" />
+                     </children>
+                  </HBox>
+                  <HBox id="excel-item" layoutX="11.0" layoutY="52.0" prefHeight="30.0" prefWidth="133.0" styleClass="file-type-item">
+                     <children>
+                        <Label styleClass="icon, filetype-item-icon" text="" />
+                        <JFXCheckBox checkedColor="#2481e3" selected="true" styleClass="file-type-item-checkbox" text="Excel" unCheckedColor="#e6e6e6" />
+                     </children>
+                  </HBox>
+                  <HBox id="ppt-item" layoutX="162.0" layoutY="52.0" prefHeight="30.0" prefWidth="133.0" styleClass="file-type-item">
+                     <children>
+                        <Label styleClass="icon, filetype-item-icon" text="" />
+                        <JFXCheckBox checkedColor="#2481e3" selected="true" styleClass="file-type-item-checkbox" text="PPT" unCheckedColor="#e6e6e6" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</VBox>

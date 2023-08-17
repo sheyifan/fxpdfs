@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="progress-outer-root" stylesheets="@../style/main.css, @../style/light_theme/container.css, @../style/progress.css, @../style/buttons.css, @../style/light_theme/text.css, @../style/light_theme/icons.css, @../style/light_theme/input.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane id="progress-root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="393.0">
+      <children>
+         <Pane layoutX="150.0" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #2481e3; -fx-border-radius: 5px ; -fx-background-radius: 0 0 5px 5px" />
+         <JFXButton id="continue-progress-button" layoutX="287.0" layoutY="133.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="80.0" styleClass="continue-button" text="continue" />
+         <Label id="info-desc" layoutX="179.0" layoutY="8.0" styleClass="info" text="Info" />
+         <Label id="copyright" layoutX="15.0" layoutY="137.0" styleClass="prompt" text="Copyright © sheyifan" />
+         <Label id="info-app-icon" layoutX="361.0" layoutY="12.0" styleClass="icon" text="" />
+         <Label id="info-dialog-icon" layoutX="27.0" layoutY="59.0" styleClass="icon" text="&#xf10e;" />
+         <TextArea id="info-info" layoutX="102.0" layoutY="45.0" prefHeight="84.0" prefWidth="249.0" />
+         <Separator layoutX="15.0" layoutY="121.0" prefHeight="4.0" prefWidth="361.0" />
+         <Separator layoutX="15.0" layoutY="44.0" prefWidth="361.0" />
+      </children>
+   </Pane>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

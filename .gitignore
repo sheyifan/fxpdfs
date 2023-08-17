@@ -1,0 +1,9 @@
+logs/
+target/
+.idea/
+.vscode/
+*.xml
+!pom.xml
+*.iml
+*Test*.java
+/*.properties

@@ -1,0 +1,41 @@
+.center-display {
+    -fx-alignment: center center;
+}
+
+.left-align-column {
+    -fx-alignment: center left;
+}
+
+.jfx-tree-table-view {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: white;
+    -fx-background-color: #333333;
+    -fx-font-family: Verdana;;
+}
+
+.jfx-tree-table-view .scroll-bar {
+    -fx-background-color: #868686;
+    -fx-pref-height: 9;
+    -fx-border-radius: 5;
+}
+
+.jfx-tree-table-view .thumb {
+    -fx-background-color: #898989;
+}
+
+.jfx-tree-table-view .increment-button, .decrement-button {
+    -fx-pref-width: 0;
+    -fx-opacity: 0;
+}
+
+.jfx-tree-table-view > .column-header-background {
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-background-color: white;
+}
+
+.jfx-tree-table-view .column-header {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #97a0b2;
+}
+
