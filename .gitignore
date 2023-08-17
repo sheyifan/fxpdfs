@@ -7,3 +7,6 @@ target/
 *.iml
 *Test*.java
 /*.properties
+
+# Generate For Native Image Tools Dashboard
+*.bgv
