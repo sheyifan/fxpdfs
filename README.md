@@ -16,6 +16,8 @@ Linux平台也可编译运行，但是native image、jlink裁剪发布软件包�
 
 ## 编译教程
 
+打开x64 Visual Studio Native Tools Command Prompt命令行终端，输入以下命令：  
+
 1. `mvn clean package`
    生成jar包，并将依赖库安装到target/lib/commons文件夹下。生成jlink JRE + jar包的软件包，路径为target/build，可以直接双击运行  
 
