@@ -10,10 +10,10 @@ import java.io.FileOutputStream
 import java.util.*
 
 fun main(args: Array<String>) {
-    Application.launch(FxPDFsMain::class.java, *args)
+    Application.launch(FxPDFsMain("placeholder")::class.java, *args)
 }
 
-class FxPDFsMain : Application() {
+class FxPDFsMain : Application {
     /**
      * The main entry point for all JavaFX applications.
      * The start method is called after the init method has returned,
@@ -35,6 +35,18 @@ class FxPDFsMain : Application() {
         System.setProperty("prism.lcdtext", "false");
         primaryView = FxPDFsPrimaryView(primaryStage, "FxPDFs primary window")
         primaryView.show()
+    }
+
+    constructor() : super()
+    constructor(tString: String): super() {
+        println("Load main constructor by ${tString}")
+    }
+
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            launch(FxPDFsMain::class.java)
+        }
     }
 }
 

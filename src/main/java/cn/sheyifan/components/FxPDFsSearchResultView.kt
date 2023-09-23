@@ -302,7 +302,7 @@ class FxPDFsSearchResultView : FxPDFsView {
         currentStage.initStyle(StageStyle.TRANSPARENT)
         currentStage.isResizable = false
         currentStage.initOwner(parentStage)
-        currentStage.icons.add(Image("/cn/sheyifan/view/images/fxpdfs_icon.png"))
+        currentStage.icons.add(Image(javaClass.getResource("/cn/sheyifan/view/images/fxpdfs_icon.png")!!.toExternalForm()))
         currentStage.initModality(Modality.APPLICATION_MODAL)
         DraggableGroup(root!!, currentStage).setDraggable(true)
     }

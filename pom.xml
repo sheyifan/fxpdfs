@@ -12,7 +12,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <main.class>cn.sheyifan.FxPDFsMainKt</main.class>
+        <module.prefix>cn.sheyifan.fxpdfs/</module.prefix>
+        <main.class>cn.sheyifan.FxPDFsMain</main.class>
         <premain.class>cn.sheyifan.InstrumentAgent</premain.class>
         <installer.class>cn.sheyifan.FxPDFsInstaller</installer.class>
         <kotlin.version>1.6.0</kotlin.version>
@@ -25,6 +26,38 @@
     </properties>
 
     <profiles>
+        <profile>
+            <id>android_native</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.gluonhq</groupId>
+                        <artifactId>gluonfx-maven-plugin</artifactId>
+                        <version>1.0.19</version>
+                        <configuration>
+                            <target>host</target>
+                            <mainClass>${main.class}</mainClass>
+                            <bundlesList></bundlesList>
+                            <resourcesList></resourcesList>
+                            <reflectionList></reflectionList>
+                            <jniList></jniList>
+                            <attachList></attachList>
+                            <nativeImageArgs>
+                                <arg>-H:IncludeResources="cn/sheyifan/.*$"</arg>
+                                <arg>-H:+AddAllCharsets</arg>
+                                <arg>--add-exports javafx.graphics/com.sun.javafx.scene=com.jfoenix</arg>
+                                <arg>--add-exports javafx.graphics/com.sun.javafx.stage=com.jfoenix</arg>
+                                <arg>--add-exports javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix</arg>
+                                <arg>--module-path</arg>
+                                <arg>${project.build.directory}/${jar.name}.jar;${project.build.directory}/build/lib/commons</arg>
+                            </nativeImageArgs>
+                            <linkerArgs></linkerArgs>
+                            <runtimeArgs></runtimeArgs>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>native</id>
             <build>
@@ -46,7 +79,9 @@
                         <configuration>
                             <imageName>${image.name}</imageName>
                             <fallback>false</fallback>
+                            <mainClass>${main.class}</mainClass>
                             <buildArgs>
+                                <!-- <arg>-H:+SharedLibrary</arg> -->
                                 <arg>-H:IncludeResources="cn/sheyifan/.*$"</arg>
                                 <arg>-H:Path=${project.build.directory}/build/native_image</arg>
                                 <arg>-H:+DashboardAll</arg>
@@ -59,7 +94,6 @@
                                     --module-path
                                     ${project.build.directory}/${jar.name}.jar;${project.build.directory}/build/lib/commons
                                 </arg>
-                                <arg>--module cn.sheyifan.fxpdfs/${main.class}</arg>
                             </buildArgs>
                             <agent>
                                 <enabled>true</enabled>
@@ -117,6 +151,31 @@
     </profiles>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base 1 -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-base</artifactId>
+            <version>17.0.8</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.8</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>17.0.8</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>17.0.8</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.rationalityfrontline.workaround/jfoenix -->
         <dependency>
             <groupId>org.rationalityfrontline.workaround</groupId>
@@ -188,12 +247,32 @@
         </pluginManagement>
         <plugins>
             <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>${main.class}</mainClass>
+                    <options>
+                        <option>--add-exports</option>
+                        <option>javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED</option>
+                        <option>--add-exports</option>ALL-UNNAMED
+                        <option>javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED</option>
+                        <option>--add-exports</option>
+                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED</option>
+                        <option>--module-path</option>
+                        <option>${project.build.directory}/${jar.name}.jar;${project.build.directory}/build/lib/commons</option>
+                        <option>--add-modules</option>
+                        <option>javafx.fxml,javafx.controls,javafx.graphics,jdk.charsets,java.sql,java.instrument</option>
+                    </options>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.source}</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -297,6 +376,11 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.0</version>
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
